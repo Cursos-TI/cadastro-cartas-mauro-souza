@@ -23,9 +23,9 @@ int main() {
     char nome_cidade_carta1[81], nome_cidade_carta2[81];  // armazena o nome da cidade
     int populacao_carta1, populacao_carta2; // armazena o número de habitantes da cidade
     float area_carta1, area_carta2; // armazena a área da cidade em kilometros quadrados
-    float pib_carta1, pib_carta2; // armazena o PIB (Produto Interno Bruto) da cidade
+    double pib_carta1, pib_carta2; // armazena o PIB (Produto Interno Bruto) da cidade
     float densidade_populacional_carta1, densidade_populacional_carta2; // armazena a densidade populacional da cidade ou seja população / área da cidade
-    float pib_per_capita_carta1, pib_per_capita_carta2; // armazena o pib per capita da cidade ou seja PIB / população da cidade
+    double pib_per_capita_carta1, pib_per_capita_carta2; // armazena o pib per capita da cidade ou seja PIB / população da cidade
     int pontos_turisticos_carta1, pontos_turisticos_carta2; // armazena o número de pontos turísticos da cidade 
 
     // Informações gerais
@@ -76,7 +76,7 @@ int main() {
     printf("\nDigite o PIB (Produto Interno Bruto) da cidade.\n\n");
     // PIB
     printf("PIB: ");
-    scanf("%f", &pib_carta1);
+    scanf("%lf", &pib_carta1);
     printf("\n");
 
     // Observações sobre o campo pontos_turisticos_carta1 
@@ -108,7 +108,7 @@ int main() {
 
     // Campos calculados
     densidade_populacional_carta1 = (float) populacao_carta1 / area_carta1; // calcula a densidade populacional da carta 1
-    pib_per_capita_carta1 = pib_carta1 / (float) populacao_carta1; // calcula o pib per capita da carta 1
+    pib_per_capita_carta1 = pib_carta1 / (double) populacao_carta1; // calcula o pib per capita da carta 1
 
     // Observação sobre o campo nome_cidade_carta2
     printf("\nDigite o nome da cidade com no máximo 80 caracteres.\n\n");
@@ -138,7 +138,7 @@ int main() {
     printf("\nDigite o PIB (Produto Interno Bruto) da cidade.\n\n");
     // PIB
     printf("PIB: ");
-    scanf("%f", &pib_carta2);
+    scanf("%lf", &pib_carta2);
     printf("\n");
     
     // Observações sobre o campo pontos_turisticos_carta2
@@ -160,10 +160,10 @@ int main() {
     printf("Cidade: %s", nome_cidade_carta1);
     printf("População: %d hab\n", populacao_carta1);
     printf("Área: %.2f km²\n", area_carta1);
-    printf("PIB: %.2f de reais\n", pib_carta1);
+    printf("PIB: %.2lf de reais\n", pib_carta1);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta1);
-    printf("PIB per Capita: %.2f de reais\n", pib_per_capita_carta1);
+    printf("PIB per Capita: %.2lf de reais\n", pib_per_capita_carta1);
     printf("\n\n");
     printf("-=== Carta2 ===-\n");
     printf("Estado: %c\n", estado_carta2);
@@ -171,10 +171,10 @@ int main() {
     printf("Cidade: %s", nome_cidade_carta2);
     printf("População: %d hab\n", populacao_carta2);
     printf("Área: %.2f km²\n", area_carta2);
-    printf("PIB: %.2f de reais\n", pib_carta2);
+    printf("PIB: %.2lf de reais\n", pib_carta2);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta2);
-    printf("PIB per Capita: %.2f de reais\n", pib_per_capita_carta2);
+    printf("PIB per Capita: %.2lf de reais\n", pib_per_capita_carta2);
     printf("\n\n");
     
     return 0;
