@@ -11,7 +11,7 @@ int main() {
     char nome_cidade_carta1[81], nome_cidade_carta2[81];  // armazena o nome da cidade
     int populacao_carta1, populacao_carta2; // armazena o número de habitantes da cidade
     float area_carta1, area_carta2; // armazena a área da cidade em kilometros quadrados
-    float pib_carta1, pib_carta2; // armazena o PIB (Produto Interno Bruto) da cidade
+    double pib_carta1, pib_carta2; // armazena o PIB (Produto Interno Bruto) da cidade
     int pontos_turisticos_carta1, pontos_turisticos_carta2; // armazena o número de pontos turísticos da cidade 
 
     // Informações gerais
@@ -62,7 +62,7 @@ int main() {
     printf("\nDigite o PIB (Produto Interno Bruto) da cidade.\n\n");
     // PIB
     printf("PIB: ");
-    scanf("%f", &pib_carta1);
+    scanf("%lf", &pib_carta1);
     printf("\n");
 
     // Observações sobre o campo 
@@ -120,7 +120,7 @@ int main() {
     printf("\nDigite o PIB (Produto Interno Bruto) da cidade.\n\n");
     // PIB
     printf("PIB: ");
-    scanf("%f", &pib_carta2);
+    scanf("%lf", &pib_carta2);
     printf("\n");
     
     // Observações sobre o campo pontos_turisticos_carta2
@@ -137,7 +137,7 @@ int main() {
     printf("Cidade: %s", nome_cidade_carta1);
     printf("População: %d hab\n", populacao_carta1);
     printf("Área: %.2f km²\n", area_carta1);
-    printf("PIB: %.2f de reais\n", pib_carta1);
+    printf("PIB: %.2lf de reais\n", pib_carta1);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta1);
     printf("\n\n");
     printf("-=== Carta2 ===-\n");
@@ -146,7 +146,7 @@ int main() {
     printf("Cidade: %s", nome_cidade_carta2);
     printf("População: %d hab\n", populacao_carta2);
     printf("Área: %.2f km²\n", area_carta2);
-    printf("PIB: %.2f de reais\n", pib_carta2);
+    printf("PIB: %.2lf de reais\n", pib_carta2);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta2);
     printf("\n\n");
     
