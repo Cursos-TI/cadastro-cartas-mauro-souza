@@ -261,30 +261,6 @@ int main() {
 
     }
 
-    // Exibe as informações armazenadas
-    printf("***** As informações armazenadas foram *****\n\n");
-    printf("-=== Carta1 ===-\n");
-    printf("Estado: %c\n", estado_carta1);
-    printf("Código: %s\n", codigo_carta1);
-    printf("Cidade: %s", nome_cidade_carta1);
-    printf("População: %d hab\n", populacao_carta1);
-    printf("Área: %.2f km²\n", area_carta1);
-    printf("PIB: %.2lf de reais\n", pib_carta1);
-    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta1);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta1);
-    printf("PIB per Capita: %.2lf de reais\n", pib_per_capita_carta1);
-    printf("\n\n");
-    printf("-=== Carta2 ===-\n");
-    printf("Estado: %c\n", estado_carta2);
-    printf("Código: %s\n", codigo_carta2);
-    printf("Cidade: %s", nome_cidade_carta2);
-    printf("População: %d hab\n", populacao_carta2);
-    printf("Área: %.2f km²\n", area_carta2);
-    printf("PIB: %.2lf de reais\n", pib_carta2);
-    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta2);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta2);
-    printf("PIB per Capita: %.2lf de reais\n", pib_per_capita_carta2);
-    printf("\n\n");
     printf("*** Resultado das comparações ***\n\n");
     printf("%s", resultado_populacao);
     printf("%s", resultado_area);
